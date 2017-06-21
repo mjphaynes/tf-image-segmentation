@@ -105,7 +105,6 @@ def pascal_voc_download(dataset_path, filenames, dataset_root, urls, md5s):
         path = get_file(filename, url, md5_hash=md5, extract=True, cache_subdir=dataset_path)
 
 
-
 @data_pascal_voc.command
 def convert_pascal_berkeley_augmented_mat_annotations_to_png(pascal_berkeley_root):
     pascal_voc.convert_pascal_berkeley_augmented_mat_annotations_to_png(pascal_berkeley_root)
